@@ -1,0 +1,34 @@
+/* o linie din formular cu un label si un input sau textarea */
+.formrow{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+/* punem label-ul la centrul container-ului */
+label{
+    text-align: center;
+    padding: 5px;
+}
+/*marim putin inaltimea textarea-ului*/
+textarea{
+    height: 300px;
+    border-radius: 20px;
+}
+
+textarea,input,button{
+    border-radius: 10px;
+}
+
+section{
+    background-color: rgb(151, 151, 151);
+    border-radius: 20px;
+}
+
+h1{
+    text-align: center;
+}
+
+button{
+    background-color: white;
+}

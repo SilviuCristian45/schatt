@@ -1,0 +1,103 @@
+/* Container-ul pt tot continutul */
+#container{
+    padding: 1.5em;
+    font-family: 'New Tegomin', serif;
+}
+/*Avem o clasa row pt a afisa pe o linie continutul */
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+/* Pt logo-ul de sus */
+#logo{
+    margin-top: 16px;
+    width: 5em;
+    height: 5em;
+}
+/* Elementul din lista de navigare */
+.row nav ul li{
+    padding: 1.5em;
+    list-style-type: none;
+}
+/* Link-ul din lista de navigare fara sa aplicam pe link-urile cu clasa .currentpage*/
+.row nav ul li a:not(.currentpage){ 
+    text-decoration: none;
+    padding:10px;
+    color: black;
+}
+.row nav ul li a:hover{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+.currentpage{
+    background-color: black;
+    padding:10px;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+}
+/*Navbar-ul trebuie aliniat la dreapta*/
+.rowright{
+    display: flex;
+    text-align: left;
+}
+/* Chatbox-ul unde apar mesajele utilizatorilor*/
+#chatsection{
+    width: 60%;
+    height: 400px;
+    background-color: grey;
+    margin-right: 20px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align:justify;
+}
+/* Sectiunea unde avem textarea-ul in care user-ul scrie mesajul si butonul de 
+send*/
+#chatsendsection{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+#chatsendsection textarea{
+    height: 400px;
+    font-size: 1.5em;
+    resize: none;
+}
+
+/*Inputul pt a trimite mesaje*/
+
+/*Subsol pt copyright */
+footer{
+    text-align: right;
+    margin-top: 40px;
+    padding-top: 10px;
+    border-top: 5px dotted black;
+    border-radius: 30px;
+}
+
+#ss{
+    display: none;
+}
+
+/*Ajustari pentru mobile (maxim 360px pe width)*/
+@media only screen and (max-width: 594px) {
+    /* Sectiunea pt chat si texbox + buton */
+    #chatsections{
+        display: flex;
+        flex-direction: column;
+    }
+    /* Chatbox-ul unde apar mesajele utilizatorilor*/
+    #chatsection{
+        width: 100%;
+    }
+    #chatsendsection{
+        width: 100%;
+        height: 90px;
+    }
+    #chatsendsection textarea{
+        font-size: 1em;
+    }
+}
+

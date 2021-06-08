@@ -1,0 +1,25 @@
+.column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+}
+
+p,h2{
+    text-align: center;
+}
+
+#registerRedirect{
+    color: red;
+    text-decoration: none;  
+}
+
+/*Ajustari pentru mobile (maxim 360px pe width)*/
+@media only screen and (max-width: 594px) {
+    .column{
+        width: 100%;
+    }
+}
+
